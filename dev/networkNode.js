@@ -33,7 +33,7 @@ app.post('/transaction',function(req,res){
     const blockIndex = bitcoin.addTransactionToPendingTransactions(newTransaction);
     res.json({note: `Transaction will be added in block ${blockIndex}.`});
 }); 
-
+//테스트
 
 app.post('/transaction/broadcast',function(req,res){
     const newTransaction = bitcoin.createNewTransaction(
