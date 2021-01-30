@@ -43,7 +43,7 @@ Blockchain.prototype.getLastBlock = function(){
 }
 
 
-//블록체인에 새로운 트랜잭션을 생성
+//블록체인에 새로운 트랜잭션을 생성함
 Blockchain.prototype.createNewTransaction = function(amount,sender,recipient){
     const newTransactions = {
         amount : amount,         //송금액
